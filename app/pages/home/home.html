@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Home
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+  <ion-icon name="ios-information-circle-outline"></ion-icon>{{mensagem}}
+  <ion-buttons>
+    <button block outline large (click)="scan()">
+      <ion-icon name="md-barcode"></ion-icon>
+    </button>
+
+    <button secondary block outline large (click)="goToWifi()">
+      <ion-icon name="ios-wifi-outline"></ion-icon>
+    </button>
+
+    <button secondary block large round (click)="goToBackGroundGeolocation()">
+      <ion-icon name="ios-navigate-outline"></ion-icon>
+    </button>
+
+    <button block large round (click)="goToSocial()">
+      <ion-icon name="md-share"></ion-icon>
+    </button>
+  </ion-buttons>
+
+</ion-content>
