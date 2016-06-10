@@ -5,6 +5,7 @@ import {WifiPage} from "../wifi/wifi";
 import {GeolocationPage} from "../geolocation/geolocation";
 import {SocialPage} from "../social/social";
 import {CameraPage} from "../camera/camera";
+import {CallingApiPage} from "../calling-api/calling-api";
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
@@ -57,5 +58,9 @@ export class HomePage {
 
   goToCamera(){
     this.nav.push(CameraPage);
+  }
+
+  goToCallingApi(){
+    this.nav.push(CallingApiPage);
   }
 }

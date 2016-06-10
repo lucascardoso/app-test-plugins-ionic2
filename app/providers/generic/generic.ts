@@ -26,4 +26,10 @@ export class Generic {
     this.nav.present(alert);
   }
 
-  }
+  captalizeName(value: String) {
+    if (value) {
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    }
+    return value;
+   }
+}
