@@ -13,8 +13,14 @@
     <button block large round (click)="share('Test Plugin socialSharing. @nraboy', 'Attention', null, 'https://www.thepolyglotdeveloper.com/2016/02/share-things-on-social-media-via-an-ionic-2-mobile-app/')">
       <ion-icon name="md-share"></ion-icon>
     </button>
-    <button block large round (click)="shareViaTwitter('Hello World', null, 'https://www.thepolyglotdeveloper.com')">
+    <button block large round style="background: #55acee;" (click)="shareViaTwitter('Share via twitter', null, 'https://www.thepolyglotdeveloper.com/2016/02/share-things-on-social-media-via-an-ionic-2-mobile-app/')">
       <ion-icon name="logo-twitter"></ion-icon>
+    </button>
+    <button block large round (click)="shareViaFacebook('Share via facebook', null, 'https://www.thepolyglotdeveloper.com/2016/02/share-things-on-social-media-via-an-ionic-2-mobile-app/')">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+    <button secondary block large round (click)="shareViaWhatsApp('Share via WhatsApp', null, 'https://www.thepolyglotdeveloper.com/2016/02/share-things-on-social-media-via-an-ionic-2-mobile-app/')">
+      <ion-icon name="logo-whatsapp"></ion-icon>
     </button>
   </ion-buttons>
 </ion-content>
