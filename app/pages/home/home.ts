@@ -4,6 +4,7 @@ import {BarcodeScanner} from "ionic-native";
 import {WifiPage} from "../wifi/wifi";
 import {GeolocationPage} from "../geolocation/geolocation";
 import {SocialPage} from "../social/social";
+import {CameraPage} from "../camera/camera";
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
@@ -52,5 +53,9 @@ export class HomePage {
 
   goToSocial(){
     this.nav.push(SocialPage);
+  }
+
+  goToCamera(){
+    this.nav.push(CameraPage);
   }
 }

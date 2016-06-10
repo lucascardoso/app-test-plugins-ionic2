@@ -39,7 +39,8 @@
     "cordova-plugin-network-information",
     "cordova-plugin-geolocation",
     "cordova-plugin-mauron85-background-geolocation",
-    "cordova-plugin-x-socialsharing"
+    "cordova-plugin-x-socialsharing",
+    "cordova-plugin-camera"
   ],
   "cordovaPlatforms": [
     "android"
