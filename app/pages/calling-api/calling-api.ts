@@ -33,8 +33,22 @@ export class CallingApiPage {
       for(var i=0; i < data.length; i++){
         data[i].name.first = this.generic.captalizeName(data[i].name.first);
         data[i].name.last = this.generic.captalizeName(data[i].name.last);
+        data[i].checked = false;
       }
       this.people = data;
     });
+  }
+
+  invertPosition(value, index){
+    console.log("Parameter: ", value, " Index: ", index);
+    var people = this.people.splice(index, 1)[0];
+    if (value) {
+      console.log("push:", people);
+      this.people.push(people);
+    } else {
+      console.log("unshift:", people);
+      this.people.unshift(people);
+    }
+    console.log("People: ", this.people);
   }
 }

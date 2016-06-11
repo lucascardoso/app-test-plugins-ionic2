@@ -10,9 +10,9 @@
 
 <ion-content padding class="calling-api">
   <ion-list>
-   <ion-item *ngFor="let person of people">
+   <ion-item *ngFor="let person of people; let i=index">
      <ion-label>{{person.name.first}} {{person.name.last}}</ion-label>
-     <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+     <ion-checkbox item-right secondary [(ngModel)]="person.checked" (ngModelChange)="invertPosition($event, i)"></ion-checkbox>
    </ion-item>
  </ion-list>
 </ion-content>
