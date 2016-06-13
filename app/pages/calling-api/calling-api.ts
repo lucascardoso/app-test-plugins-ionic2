@@ -43,10 +43,8 @@ export class CallingApiPage {
     console.log("Parameter: ", value, " Index: ", index);
     var people = this.people.splice(index, 1)[0];
     if (value) {
-      console.log("push:", people);
       this.people.push(people);
     } else {
-      console.log("unshift:", people);
       this.people.unshift(people);
     }
     console.log("People: ", this.people);
