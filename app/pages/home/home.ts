@@ -7,6 +7,7 @@ import {SocialPage} from '../social/social';
 import {CameraPage} from '../camera/camera';
 import {CallingApiPage} from '../calling-api/calling-api';
 import {JasmineTestPage} from '../jasmine-test/jasmine-test';
+import {LoginPage} from '../login/login';
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
@@ -67,5 +68,9 @@ export class HomePage {
 
   goToJasmine(){
     this.nav.push(JasmineTestPage);
+  }
+
+  goToLogin(){
+    this.nav.push(LoginPage);
   }
 }
